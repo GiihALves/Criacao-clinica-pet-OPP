@@ -12,9 +12,9 @@ public class App {
                 "11 99275-6559"
         );
 
-        System.out.println(pessoa.cep);
-        System.out.println(pessoa.email);
-        System.out.println(pessoa.telefone);
+        System.out.println(pessoa.getCep());
+        System.out.println(pessoa.getEmail());
+        System.out.println(pessoa.getTelefone());
 
 
         Pet animal = new Pet(
@@ -33,7 +33,7 @@ public class App {
 
         System.out.println(animal.dono.retornarTodosDados());
         System.out.println(animal.retornarDadosPet());
-        System.out.println(pessoa.verificarMenorIdade(18));
+        System.out.println(pessoa.getIdade());
 
 
 

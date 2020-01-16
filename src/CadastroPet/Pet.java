@@ -1,13 +1,13 @@
 package CadastroPet;
 
 public class Pet {
-    String nome;
-    String especie;
-    String raca;
+    private String nome;
+    private String especie;
+    private String raca;
     int idade;
-    String cor;
+    private String cor;
     Responsavel dono;
-    String tipoCuidado;
+    private String tipoCuidado;
 
 
     public Pet(String nome, String especie, String raca, int idade, String cor, Responsavel dono, String tipoCuidado) {
