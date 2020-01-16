@@ -16,6 +16,7 @@ public class App {
         System.out.println(pessoa.email);
         System.out.println(pessoa.telefone);
 
+
         Pet animal = new Pet(
                 "Thor",
                 "Cachorro",
@@ -23,9 +24,18 @@ public class App {
                 5,
                 "Amarelo",
                 pessoa,
-                "Banho e tosa"
+                Pet.TiposCuidado.Fisioterapia.toString()
         );
 
-        System.out.println(animal.dono.telefone);
+        pessoa.retornarDsdosBasicos();
+
+        animal.retornarDadosPet();
+
+        System.out.println(animal.dono.retornarTodosDados());
+        System.out.println(animal.retornarDadosPet());
+        System.out.println(pessoa.verificarMenorIdade(18));
+
+
+
     }
 }
